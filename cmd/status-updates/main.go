@@ -11,7 +11,6 @@ import (
 	"github.com/TicketsBot-cloud/status-updates/internal/db"
 	"github.com/TicketsBot-cloud/status-updates/internal/httpserver"
 	"github.com/TicketsBot-cloud/status-updates/internal/statuspage"
-	"github.com/Chaoskjelll44/status-updates/internal/sharder"
 	"go.uber.org/zap"
 
 	_ "github.com/joho/godotenv/autoload" // Load environment variables from .env file
@@ -54,7 +53,4 @@ func main() {
 
 	<-ctx.Done()
 	logger.Info("Shutting down HTTP server...")
-
-    SharderClient := sharder.NewClient(SharderClient, conf)
-
 }
