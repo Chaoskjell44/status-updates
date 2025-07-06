@@ -120,6 +120,8 @@ func (i Incident) GetSeverity() string {
 		severity = "Degraded Performance"
 	case "operational":
 		severity = "Operational"
+	case "under_maintenance":
+	    severity = "Under Maintenance"
 	default:
 		severity = "Unknown"
 	}
@@ -141,6 +143,8 @@ func (i Incident) GetColor() int {
 		color = 0xFFA500
 	case "operational":
 		color = 0x00CD00
+	case "under_maintenance"
+	    color = 3447003
 	default:
 		color = 0x00CD00
 	}
