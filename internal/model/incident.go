@@ -143,7 +143,7 @@ func (i Incident) GetColor() int {
 		color = 0xFFA500
 	case "operational":
 		color = 0x00CD00
-	case "under_maintenance"
+	case "under_maintenance":
 	    color = 3447003
 	default:
 		color = 0x00CD00
